@@ -29,31 +29,36 @@ Before you begin, Please ensure you have the following installed:
 **Step 2:**  Build docker images:
       For the backend:  docker build -t backend:latest -f ./backend/Dockerfile . 
       <br />
+      
       For the frontend: docker build -t frontend:latest -f ./frontend/Dockerfile .
 <br/>
 
 **Step 3:** Load images into Kind cluster:
       Load the backend image: kind load docker-image backend:latest --name test-cluster
       <br />
+
       Load the frontend image: kind load docker-image frontend:latest --name test-cluster
 <br/>
 
 **Step 4:** Deploy Backend and Frontend:
       Apply the deployment YAML files to deploy the services: 
         kubectl apply -f ./Deployment/backend-deployment.yaml
-        <br />
+        <br/>
+
         kubectl apply -f ./Deployment/frontend-deployment.yaml
 <br/>
 
 **Step 5:** To check Status of Pod:
      *Ensure both frontend and backend status is Running*
-     <br />
+     <br/>
+
         kubectl get pods  
 <br/>
 
 **Step 6:** Get Service Details: 
       *Retrieve the list of services:*
-      <br />
+      <br/>
+
         kubectl get services
   
 **Step 7:** Port-Forward Frontend Service:
