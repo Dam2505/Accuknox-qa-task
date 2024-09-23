@@ -9,23 +9,19 @@ Before you begin, Please ensure you have the following installed:
 - Node.js (with npm)
 - Cypress
 
-**Installing Cypress:**
-
-1. Run This command in the command prompt:
-	  npm install cypress --save-dev
-2. Open Cypress to run the automated tests
-	  npx cypress open
-3. To take screenshots after running each spec file 
-  npm install cy-verify-downloads
+1. Run This command in command prompt: <br />
+	  npm install cypress --save-dev <br />
+2. Open Cypress to run the automated tests <br />
+	  npx cypress open <br />
+3. To take screenshots after running each spec file  <br />
+  npm install cy-verify-downloads <br />
 
 
 **Important Notes**
 
 - Before running cypress, ensure frontend and backend service is created and up <br />
-- Create backend and frontend deployment yaml (backend-deployment.yaml and frontend deployment.yaml)
-  <br />
-Step 1: Create a Kind cluster
-<br />
+- Create backend and frontend deployment yaml (backend-deployment.yaml and frontend deployment.yaml)<br />
+Step 1: Create a Kind cluster <br />
     kind create cluster --name test-cluster   
 <br />
   To get cluster info
