@@ -23,17 +23,23 @@ Before you begin, Please ensure you have the following installed:
 
 .Beforing running cypress, ensure frontend and backend service is created and up <br />
 .Create backend and frontend deployment yaml (backend-deployment.yaml and frontend deployment.yaml) <br />
-Step 1: Create a Kind cluster
-    kind create cluster --name test-cluster
+Step 1: Create a Kind cluster <br />
+    kind create cluster --name test-cluster   
+    <br />
   To get cluster info
-    kubectl cluster-info
+  <br />
+    kubectl cluster-info 
+    <br />
 
-Step 2:  Build docker images:
+Step 2:  Build docker images: 
+<br />
       For the backend:
+      <br />
         docker build -t backend:latest -f ./backend/Dockerfile . 
+<br />
       For the frontend:
         docker build -t frontend:latest -f ./frontend/Dockerfile .
-
+<br />
 
 Step 3: Load images into Kind cluster:
       Load the backend image: 
