@@ -21,9 +21,9 @@ Before you begin, Please ensure you have the following installed:
 
 **Important Notes**
 
-Beforing running cypress, ensure frontend and backend service is created and up 
- Create backend and frontend deployment yaml (backend-deployment.yaml and frontend deployment.yaml)
-Step 1: Create a Kind cluster
+**.**Beforing running cypress, ensure frontend and backend service is created and up 
+ **.**Create backend and frontend deployment yaml (backend-deployment.yaml and frontend deployment.yaml)
+<br>Step 1: Create a Kind cluster
     kind create cluster --name test-cluster
   To get cluster info
     kubectl cluster-info
