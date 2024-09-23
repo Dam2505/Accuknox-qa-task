@@ -11,7 +11,7 @@ Before you begin, Please ensure you have the following installed:
 
 **Installing Cypress:**
 
-1. Run This command in command prompt:
+1. Run This command in the command prompt:
 	  npm install cypress --save-dev
 2. Open Cypress to run the automated tests
 	  npx cypress open
@@ -21,16 +21,17 @@ Before you begin, Please ensure you have the following installed:
 
 **Important Notes**
 
-.Beforing running cypress, ensure frontend and backend service is created and up <br />
-.Create backend and frontend deployment yaml (backend-deployment.yaml and frontend deployment.yaml) <br />
-Step 1: Create a Kind cluster <br />
-    kind create cluster --name test-cluster   
-    <br />
-  To get cluster info
+- Before running cypress, ensure frontend and backend service is created and up <br />
+- Create backend and frontend deployment yaml (backend-deployment.yaml and frontend deployment.yaml)
   <br />
+Step 1: Create a Kind cluster
+<br />
+    kind create cluster --name test-cluster   
+<br />
+  To get cluster info
+    <br />
     kubectl cluster-info 
     <br />
-
 Step 2:  Build docker images: 
 <br />
       For the backend:
@@ -40,10 +41,12 @@ Step 2:  Build docker images:
       For the frontend:
         docker build -t frontend:latest -f ./frontend/Dockerfile .
 <br />
-
 Step 3: Load images into Kind cluster:
-      Load the backend image: 
+<br />
+      Load the backend image:
+  <br />
         kind load docker-image backend:latest --name test-cluster
+  <br />
       Load the frontend image:
         kind load docker-image frontend:latest --name test-cluster
 
