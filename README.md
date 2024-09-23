@@ -15,15 +15,17 @@ Before you begin, Please ensure you have the following installed:
   <br />
   
    npm install cypress --save-dev 
+<br/>
+
 2. Open Cypress to run the automated tests: 
 <br />
   
-npx cypress open
+    npx cypress open
 
 3. To take screenshots after running each spec file: 
 <br />
   
-npm install cy-verify-downloads
+    npm install cy-verify-downloads
 
 
 **Important Notes**
