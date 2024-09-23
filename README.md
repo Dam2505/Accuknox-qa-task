@@ -39,7 +39,6 @@ Before you begin, Please ensure you have the following installed:
       
       kind create cluster --name test-cluster
 <br />
-
     To get cluster info: 
 <br/>
     
@@ -93,4 +92,6 @@ Before you begin, Please ensure you have the following installed:
 	For example, click on Click on Intergration.cy.js to start the test.
 
 **Test Script for automated testing**
-Test Script is present in ./cypress/e2e/Integration.cy.js 
+
+<br />
+  Test Script is present in ./cypress/e2e/Integration.cy.js 
