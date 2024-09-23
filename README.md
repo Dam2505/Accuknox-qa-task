@@ -12,9 +12,9 @@ Before you begin, Please ensure you have the following installed:
 **Installing Cypress:**
 
 1. Run This command in command prompt: 
-  <br />
-  
-   npm install cypress --save-dev 
+<br />
+    
+    npm install cypress --save-dev 
 <br/>
 
 2. Open Cypress to run the automated tests: 
@@ -39,10 +39,11 @@ Before you begin, Please ensure you have the following installed:
       
       kind create cluster --name test-cluster
 <br />
-  To get cluster info: 
-<br/>
 
-  kubectl cluster-info
+    To get cluster info: 
+<br/>
+    
+    kubectl cluster-info
 <br/>
 
 **Step 2:**  Build docker images: 
