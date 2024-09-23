@@ -22,11 +22,6 @@ Before you begin, Please ensure you have the following installed:
   
     npx cypress open
 
-3. To take screenshots after running each spec file: 
-<br />
-  
-    npm install cy-verify-downloads
-
 
 **Important Notes**
 
@@ -87,7 +82,7 @@ Before you begin, Please ensure you have the following installed:
 
       kubectl port-forward svc/frontend-service 8080:80
 
-4. Once Cypress is open, you can execute your integration tests by selecting the test file. Ensure that the frontend service is accessible at http://localhost:8080.
+3. Once Cypress is open, you can execute your integration tests by selecting the test file. Ensure that the frontend service is accessible at http://localhost:8080.
 
 	For example, click on Click on Intergration.cy.js to start the test.
 
