@@ -3,6 +3,7 @@
     "cypress": "^13.14.2"
   },
   "dependencies": {
+    "axios": "^1.7.7",
     "cy-verify-downloads": "^0.2.5"
   }
 }

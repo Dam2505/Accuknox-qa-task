@@ -4,9 +4,10 @@
     "description": "Simple backend service",
     "main": "server.js",
     "scripts": {
-      "start": "node server.js"
+        "start": "node server.js"
     },
     "dependencies": {
-      "express": "^4.17.1"
+        "backend": "file:",
+        "express": "^4.17.1"
     }
-  }
+}
