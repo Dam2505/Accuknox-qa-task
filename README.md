@@ -41,21 +41,23 @@ npm install cy-verify-downloads
   To get cluster info : kubectl cluster-info
 <br/>
 
-**Step 2:**  Build docker images:
-      
+**Step 2:**  Build docker images: 
       <br />
-
-      For the backend:  docker build -t backend:latest -f ./backend/Dockerfile . 
+      For the backend:  
+      <br />
+      docker build -t backend:latest -f ./backend/Dockerfile . 
       <br />
 
       For the frontend: docker build -t frontend:latest -f ./frontend/Dockerfile .
 <br/>
 
 **Step 3:** Load images into Kind cluster:
-      
       <br />
 
-      Load the backend image: kind load docker-image backend:latest --name test-cluster
+      Load the backend image: 
+      <br />
+      
+      kind load docker-image backend:latest --name test-cluster
       <br />
 
       Load the frontend image: kind load docker-image frontend:latest --name test-cluster
